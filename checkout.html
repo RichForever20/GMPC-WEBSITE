@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GMPC - Checkout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="goto-here">
+    <!-- Top bar -->
+    <!-- <div class="py-1 bg-black"> -->
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+          <div class="col-lg-12 d-block">
+            <div class="row d-flex">
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <!-- <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                <span class="text">+ 1235 2355 98</span>
+              </div>
+              <div class="col-md pr-4 d-flex topper align-items-center">
+                <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                <span class="text">youremail@email.com</span>
+              </div>
+              <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                <span class="text">3-5 Business days delivery &amp; Free Returns</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+	      <a class="navbar-brand" href="index.html"><img src="images/GMPC-logo-removebg-preview.png" alt="" style="width: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown">Shop</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="shop.html">Shop</a>
+                <!-- <a class="dropdown-item" href="product-single.html">Single Product</a> -->
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+<li class="nav-item cta cta-colored" >
+  <a href="cart.html" class="nav-link linko" >
+    <span class="icon-shopping_cart" ></span>
+    <span id="cart-count">0</span>
+  </a>
+</li>        </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_6.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
+            <h1 class="mb-0 bread">Checkout</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 ftco-animate">
+<form id="checkout-form" class="billing-form" method="POST">
+              <h3 class="mb-4 billing-heading">Billing Details</h3>
+              <div class="row align-items-end">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" class="form-control" required>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="country">State / Country</label>
+                    <div class="select-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select id="country" class="form-control" required>
+                        <option value="">Select Country</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Philippines</option>
+                        <option>South Korea</option>
+                        <option>Hongkong</option>
+                        <option>Japan</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="streetaddress">Street Address</label>
+                    <input type="text" id="streetaddress" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Apartment, suite, unit etc: (optional)">
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="towncity">Town / City</label>
+                    <input type="text" id="towncity" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="postcodezip">Postcode / ZIP</label>
+                    <input type="text" id="postcodezip" class="form-control" required>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="emailaddress">Email Address</label>
+                    <input type="email" id="emailaddress" class="form-control" required>
+                  </div>
+                </div>
+
+                <!-- Account & Shipping Options -->
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                  <div class="form-group mt-4">
+                    <div class="radio">
+                    <label class="mr-3"><input type="radio" name="extraOption" value="account"> Create an Account?</label>
+<label><input type="radio" name="extraOption" value="shipping"> Ship to different address</label>
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Create Account Fields -->
+                <div id="account-fields" style="display:none;" class="col-md-12">
+                  <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" class="form-control">
+                  </div>
+                </div>
+
+                <!-- Ship to Different Address Fields -->
+                <div id="shipping-fields" style="display:none;" class="col-md-12">
+                  <h5>Shipping Address</h5>
+                  <div class="form-group">
+                    <label for="alt-street">Street Address</label>
+                    <input type="text" id="alt-street" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="alt-city">Town / City</label>
+                    <input type="text" id="alt-city" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="alt-zip">Postcode / ZIP</label>
+                    <input type="text" id="alt-zip" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </form><!-- END Billing Form -->
+
+            <!-- Cart + Payment -->
+            <div class="row mt-5 pt-3 d-flex">
+              <div class="col-md-6 d-flex">
+              <div class="cart-detail cart-total bg-light p-3 p-md-4">
+  <h3 class="billing-heading mb-4">Cart Total</h3>
+  <p class="d-flex">
+    <span>Subtotal</span>
+<span id="subtotal">₦0.00</span>  </p>
+  <p class="d-flex">
+    <span>Delivery</span>
+<span id="delivery">₦0.00</span>  </p>
+  <hr>
+  <p class="d-flex total-price">
+    <span>Total</span>
+<span id="total">₦0.00</span>  </p>
+</div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="cart-detail bg-light p-3 p-md-4">
+                  <h3 class="billing-heading mb-4">Payment Method</h3>
+                  <div class="form-group">
+                    <div class="radio">
+                      <label><input type="radio" name="paymentMethod" value="bank" class="mr-2"> Direct Bank Transfer</label>
+                    </div>
+                     <div id="bank-alert" class="custom-alert success" style="display:none;">
+  <!-- <span class="icon">🏦</span> -->
+  <div class="content">
+    <h4>Bank Transfer Instructions</h4>
+    <p>Please make a transfer to:</p>
+    <p style="font-size: 15px;"><strong>1234567890 – Example Bank</strong></p>
+  </div>
+  <button class="close-btn">&times;</button>
+</div>
+<style>
+  .content{
+    height: 90px;
+  }
+  .custom-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 25px;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s ease;
+  position: relative;
+}
+.content h4{
+  font-size: 15px;
+}
+.custom-alert .icon {
+  font-size: 2rem;
+}
+
+.custom-alert.success {
+  background: beige;
+  border-left: 6px solid #a78928;
+  color: #155724;
+}
+
+.custom-alert .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #155724;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: transform 0.2s;
+}
+
+.custom-alert .close-btn:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media(max-width:430px){
+  .content{
+    height: 170px;
+  }
+  .cart-detail{
+    margin-top: 15px;
+  }
+}
+
+</style>
+                  </div>
+                 
+                  <div class="form-group">
+                    <div class="radio">
+                      <label><input type="radio" name="paymentMethod" value="card" class="mr-2"> Credit/Debit Card</label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label><input type="checkbox" id="terms" class="mr-2"> I have read and accept the terms and conditions</label>
+                    </div>
+                  </div>
+                  <p><a href="#" id="place-order" class="btnn btn btn-primary py-3 px-4" style="background-color:#C75656; ">Place an order</a></p>
+                </div>
+                                    <style>
+.btnn:hover {
+  background-color: #fff !important;
+  color: #C75656 !important;
+  border-color: #C75656 !important;
+}
+</style>
+              </div>
+            </div>
+          </div> <!-- .col-md-8 -->
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+
+    
+    <!-- Footer -->
+<footer class="ftco-footer bg-light ftco-section">
+      <div class="container">
+      	<div class="row">
+      		<div class="mouse">
+						<a href="#" class="mouse-icon">
+							<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+						</a>
+					</div>
+      	</div>
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <!-- <h2 class="ftco-heading-2">Winkel</h2> -->
+<img src="/images/GMPC-logo-removebg-preview.png" alt="" style="width: 90px;">
+              <p>Rooted in the synergy between traditional medicinal knowledge and modern biotechnology</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Menu</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Shop</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Journal</a></li>
+                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Help</h2>
+              <div class="d-flex">
+	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
+	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+	                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
+	                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+	                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+	              </ul>
+	              <ul class="list-unstyled">
+	                <li><a href="#" class="py-2 d-block">FAQs</a></li>
+	                <li><a href="#" class="py-2 d-block">Contact</a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text"><b>Head Office:</b>
+GMPC Ltd,
+32 B, Olaoluwa Street, Off Obokun Avenue, Ojodu, Ikeja 100213, Lagos, Nigeria.
+</span></li><br>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+234 803 501 5103
+</span></a></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2347043022500
+</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright Global Moringa Production Consultants Ltd (GMPC Ltd) &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by <a href="#" target="_blank">OMID DEV</a>
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Load cart
+  let buyNowItem = JSON.parse(localStorage.getItem("buyNowItem"));
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  if (buyNowItem) {
+    cart = [buyNowItem];
+    localStorage.removeItem("buyNowItem");
+  }
+
+  // Calculate totals
+  let subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  let delivery = 0; // change if needed
+  let total = subtotal + delivery;
+
+  document.getElementById("subtotal").textContent = "₦" + subtotal.toFixed(2);
+  document.getElementById("delivery").textContent = "₦" + delivery.toFixed(2);
+  document.getElementById("total").textContent = "₦" + total.toFixed(2);
+
+  // Place order button
+  document.querySelector("#place-order").addEventListener("click", function(e) {
+    e.preventDefault();
+    let paymentMethod = document.querySelector("input[name='paymentMethod']:checked");
+
+    if (!paymentMethod) {
+      alert("Please select a payment method.");
+      return;
+    }
+
+    // Collect customer data
+    let customerData = {
+      firstname: document.getElementById("firstname").value,
+      lastname: document.getElementById("lastname").value,
+      email: document.getElementById("emailaddress").value,
+      phone: document.getElementById("phone").value,
+      address: document.getElementById("streetaddress").value,
+      city: document.getElementById("towncity").value,
+      zip: document.getElementById("postcodezip").value,
+      items: cart,
+      total: total
+    };
+
+    if (paymentMethod.value === "bank") {
+      // Save order as Pending
+      fetch("verify-payment.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...customerData,
+          reference: "BANK-" + Date.now(),
+          payment_method: "Bank Transfer",
+          status: "Pending"
+        })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          document.getElementById("bank-alert").style.display = "flex";
+          alert("Order placed successfully. Tracking ID: " + data.tracking_id);
+          localStorage.removeItem("cart");
+        } else {
+          alert("Order failed: " + data.message);
+        }
+      })
+      .catch(err => console.error(err));
+    }
+
+    if (paymentMethod.value === "card") {
+      let handler = PaystackPop.setup({
+        key: "pk_test_xxxxxxxxxxxxxxxx", // replace
+        email: customerData.email || "customer@test.com",
+        amount: total * 100, // Paystack expects kobo
+        currency: "NGN",
+        callback: function(response) {
+          let orderData = {
+            reference: response.reference,
+            ...customerData
+          };
+
+          fetch("verify-payment.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(orderData)
+          })
+          .then(res => res.json())
+          .then(data => {
+            if (data.success) {
+              alert("Order successful! Tracking ID: " + data.tracking_id);
+              localStorage.removeItem("cart");
+              window.location.href = "success.html?track=" + data.tracking_id;
+            } else {
+              alert("Order failed: " + data.message);
+            }
+          })
+          .catch(err => console.error(err));
+        },
+        onClose: function() {
+          alert("Payment window closed.");
+        }
+      });
+      handler.openIframe();
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const bankRadio = document.querySelector("input[value='bank']");
+  const cardRadio = document.querySelector("input[value='card']");
+  const bankAlert = document.getElementById("bank-alert");
+
+  // Toggle bank info when selecting payment method
+  [bankRadio, cardRadio].forEach(radio => {
+    radio.addEventListener("change", () => {
+      if (bankRadio.checked) {
+        bankAlert.style.display = "flex"; // show alert
+      } else {
+        bankAlert.style.display = "none"; // hide alert
+      }
+    });
+  });
+
+  // Allow closing the alert
+  document.querySelectorAll(".close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      bankAlert.style.display = "none";
+      bankRadio.checked = false; // unselect bank
+    });
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const radios = document.querySelectorAll("input[name='extraOption']");
+  const accountFields = document.getElementById("account-fields");
+  const shippingFields = document.getElementById("shipping-fields");
+
+  radios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      if (radio.value === "account" && radio.checked) {
+        accountFields.style.display = "block";
+        shippingFields.style.display = "none";
+      } else if (radio.value === "shipping" && radio.checked) {
+        shippingFields.style.display = "block";
+        accountFields.style.display = "none";
+      }
+    });
+  });
+});
+</script>
+
+
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+});
+
+function updateCartCount() {
+  let count = cart.reduce((sum, item) => sum + item.quantity, 0);
+  document.getElementById("cart-count").textContent = `[${count}]`;
+}
+</script>
+
+  </body>
+</html>
